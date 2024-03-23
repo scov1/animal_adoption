@@ -1,0 +1,63 @@
+name: animal_adoption
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get_it: ^7.6.7
+  dio: ^5.4.1
+  intl: ^0.18.0
+  loader_overlay: ^4.0.0
+  flutter_svg: 2.0.10+1
+  carousel_slider: ^4.2.1
+
+  flutter_localizations:
+    sdk: flutter
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.8
+  flutter_gen: ^5.4.0
+
+flutter_intl:
+  enabled: true
+  main_locale: en
+  arb_dir: lib/l10n/arb
+  output_dir: lib/l10n/generated
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svg/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/font/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/font/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/font/Roboto-Bold.ttf
+          weight: 700
+    - family: PT Serif
+      fonts:
+        - asset: assets/font/PT_Serif-Web-Bold.ttf
+          weight: 700
+        - asset: assets/font/PT_Serif-Web-Regular.ttf
+          weight: 400
+
+  
