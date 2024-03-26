@@ -5,7 +5,12 @@
     "discoverTailoredMathes": "Discover Tailored Mathes",
     "browseProfiles": "Browse profiles photos, and description to find pets that match your criteria",
     "connectAndAdopt": "Connect and Adopt",
-    "messageShelters": "Message shelters, arrange a meet-and-greet, and make the decision to adopt your new furry friend",
+    "messageShelters": "Message shelters and make the decision to adopt your new furry friend",
     "start": "Start",
-    "next": "Next"
+    "next": "Next",
+    "joinNow": "Join Now",
+    "joinOurAnimal": "Join our animal\nlovers Community",
+    "community": "Community",
+    "adoptPets": "Adopt pets",
+    "showAll": "show all"
 }

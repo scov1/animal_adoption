@@ -10,6 +10,12 @@
 class FontFamily {
   FontFamily._();
 
+  /// Font family: Comfortaa
+  static const String comfortaa = 'Comfortaa';
+
+  /// Font family: Montserrat
+  static const String montserrat = 'Montserrat';
+
   /// Font family: PT Serif
   static const String pTSerif = 'PT Serif';
 

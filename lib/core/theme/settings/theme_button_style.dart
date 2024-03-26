@@ -29,7 +29,7 @@ class ThemeButtonStyles {
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(60.0),
     ),
-    backgroundColor: _color.accent,
+    backgroundColor: _color.accentBg,
     elevation: 0.0,
     padding: const EdgeInsets.symmetric(
       vertical: 14.0,
@@ -48,6 +48,13 @@ class ThemeButtonStyles {
       vertical: 12.0,
       horizontal: 24.0,
     ),
+  );
+
+  late final ButtonStyle elevated3 = ElevatedButton.styleFrom(
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(12.0),
+    ),
+    backgroundColor: _color.background,
   );
 
   late final ButtonStyle outline1 = OutlinedButton.styleFrom(

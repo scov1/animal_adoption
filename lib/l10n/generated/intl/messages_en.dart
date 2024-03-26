@@ -22,8 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "adoptPets": MessageLookupByLibrary.simpleMessage("Adopt pets"),
         "browseProfiles": MessageLookupByLibrary.simpleMessage(
             "Browse profiles photos, and description to find pets that match your criteria"),
+        "community": MessageLookupByLibrary.simpleMessage("Community"),
         "connectAndAdopt":
             MessageLookupByLibrary.simpleMessage("Connect and Adopt"),
         "customizeYourIDeal": MessageLookupByLibrary.simpleMessage(
@@ -32,11 +34,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Discover Tailored Mathes"),
         "everyoneDeservesFamiliy":
             MessageLookupByLibrary.simpleMessage("Everyone deserves a family."),
+        "joinNow": MessageLookupByLibrary.simpleMessage("Join Now"),
+        "joinOurAnimal": MessageLookupByLibrary.simpleMessage(
+            "Join our animal\nlovers Community"),
         "messageShelters": MessageLookupByLibrary.simpleMessage(
-            "Message shelters, arrange a meet-and-greet, and make the decision to adopt your new furry friend"),
+            "Message shelters and make the decision to adopt your new furry friend"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "personalizeYourPref": MessageLookupByLibrary.simpleMessage(
             "Personalize your preferences"),
+        "showAll": MessageLookupByLibrary.simpleMessage("show all"),
         "start": MessageLookupByLibrary.simpleMessage("Start")
       };
 }

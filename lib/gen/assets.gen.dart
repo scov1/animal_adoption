@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/banner.png
+  AssetGenImage get banner => const AssetGenImage('assets/images/banner.png');
+
   /// File path: assets/images/cat_1.jpeg
   AssetGenImage get cat1 => const AssetGenImage('assets/images/cat_1.jpeg');
 
@@ -19,7 +22,7 @@ class $AssetsImagesGen {
   AssetGenImage get splash => const AssetGenImage('assets/images/splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [cat1, splash];
+  List<AssetGenImage> get values => [banner, cat1, splash];
 }
 
 class $AssetsSvgGen {
@@ -27,6 +30,18 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/arrow_back.svg
   String get arrowBack => 'assets/svg/arrow_back.svg';
+
+  /// File path: assets/svg/ic_favorite.svg
+  String get icFavorite => 'assets/svg/ic_favorite.svg';
+
+  /// File path: assets/svg/ic_home.svg
+  String get icHome => 'assets/svg/ic_home.svg';
+
+  /// File path: assets/svg/ic_paw.svg
+  String get icPaw => 'assets/svg/ic_paw.svg';
+
+  /// File path: assets/svg/ic_user.svg
+  String get icUser => 'assets/svg/ic_user.svg';
 
   /// File path: assets/svg/onboard_1.svg
   String get onboard1 => 'assets/svg/onboard_1.svg';
@@ -41,8 +56,17 @@ class $AssetsSvgGen {
   String get onboard4 => 'assets/svg/onboard_4.svg';
 
   /// List of all assets
-  List<String> get values =>
-      [arrowBack, onboard1, onboard2, onboard3, onboard4];
+  List<String> get values => [
+        arrowBack,
+        icFavorite,
+        icHome,
+        icPaw,
+        icUser,
+        onboard1,
+        onboard2,
+        onboard3,
+        onboard4
+      ];
 }
 
 class Assets {

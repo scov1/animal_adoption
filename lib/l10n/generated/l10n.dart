@@ -110,10 +110,10 @@ class S {
     );
   }
 
-  /// `Message shelters, arrange a meet-and-greet, and make the decision to adopt your new furry friend`
+  /// `Message shelters and make the decision to adopt your new furry friend`
   String get messageShelters {
     return Intl.message(
-      'Message shelters, arrange a meet-and-greet, and make the decision to adopt your new furry friend',
+      'Message shelters and make the decision to adopt your new furry friend',
       name: 'messageShelters',
       desc: '',
       args: [],
@@ -135,6 +135,56 @@ class S {
     return Intl.message(
       'Next',
       name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join Now`
+  String get joinNow {
+    return Intl.message(
+      'Join Now',
+      name: 'joinNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join our animal\nlovers Community`
+  String get joinOurAnimal {
+    return Intl.message(
+      'Join our animal\nlovers Community',
+      name: 'joinOurAnimal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Community`
+  String get community {
+    return Intl.message(
+      'Community',
+      name: 'community',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adopt pets`
+  String get adoptPets {
+    return Intl.message(
+      'Adopt pets',
+      name: 'adoptPets',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `show all`
+  String get showAll {
+    return Intl.message(
+      'show all',
+      name: 'showAll',
       desc: '',
       args: [],
     );

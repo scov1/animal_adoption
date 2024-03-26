@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../gen/assets.gen.dart';
+import '../../../l10n/generated/l10n.dart';
+import '../../theme/app_theme.dart';
 import '../../theme/repository/theme_repo.dart';
 import '../core_di.dart';
 
@@ -28,16 +30,30 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Center(
-              child: Image.asset(Assets.images.splash.path),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0, right: 16, top: 24),
+                  child: Center(
+                    child: Image.asset(Assets.images.splash.path),
+                  ),
+                ),
+                Text('Everyone', style: context.text.s30w900),
+                Text(
+                  'deserves',
+                  style: context.text.s30w900.copyWith(color: context.color.orangeText),
+                ),
+                Text('a family.', style: context.text.s30w900),
+                const SizedBox(height: 20),
+              ],
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(bottom: 16.0),
+            padding: EdgeInsets.only(bottom: 16),
             child: Align(
               alignment: Alignment.bottomCenter,
               child: CircularProgressIndicator(),

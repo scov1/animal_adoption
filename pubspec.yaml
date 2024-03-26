@@ -19,6 +19,11 @@ dependencies:
   loader_overlay: ^4.0.0
   flutter_svg: 2.0.10+1
   carousel_slider: ^4.2.1
+  cloud_firestore: ^4.15.8
+  firebase_core: ^2.27.0
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.4
+  flutter_inappwebview: ^5.4.4
 
   flutter_localizations:
     sdk: flutter
@@ -35,8 +40,6 @@ flutter_intl:
   main_locale: en
   arb_dir: lib/l10n/arb
   output_dir: lib/l10n/generated
-
-
   flutter_lints: ^2.0.0
 
 flutter:
@@ -58,6 +61,22 @@ flutter:
         - asset: assets/font/PT_Serif-Web-Bold.ttf
           weight: 700
         - asset: assets/font/PT_Serif-Web-Regular.ttf
+          weight: 400
+    - family: Comfortaa
+      fonts:
+        - asset: assets/font/Comfortaa-Bold.ttf
+          weight: 700
+        - asset: assets/font/Comfortaa-Medium.ttf
+          weight: 500
+        - asset: assets/font/Comfortaa-Regular.ttf
+          weight: 400
+    - family: Montserrat
+      fonts:
+        - asset: assets/font/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/font/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/font/Montserrat-Regular.ttf
           weight: 400
 
   

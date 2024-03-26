@@ -34,7 +34,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               carouselController: _controller,
               items: onboardingItems
                   .map(
-                    (e) => SvgPicture.asset(e.image!),
+                    (e) => SvgPicture.asset(
+                      e.image!,
+                    ),
                   )
                   .toList(),
               options: CarouselOptions(
@@ -52,16 +54,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             const SizedBox(height: 16.0),
             Text(
               onboardingItems[current].title ?? '',
-              style: context.text.s12w700.copyWith(
-                fontSize: 24,
-              ),
+              style: context.text.s22w700,
             ),
             const SizedBox(height: 16.0),
             Text(
               onboardingItems[current].desc ?? '',
-              style: context.text.s14w400.copyWith(
-                fontSize: 16,
-              ),
+              style: context.text.s16w400,
             ),
             const SizedBox(height: 30.0),
             Row(
@@ -94,7 +92,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     style: context.button.elevated1,
                     onPressed: () {
                       if (current == onboardingItems.length - 1) {
-                        Navigator.of(context).pushReplacementNamed('/home');
+                        Navigator.of(context).pushReplacementNamed('/root');
                       } else {
                         _controller.nextPage();
                       }
