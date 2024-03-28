@@ -23,7 +23,7 @@ class HomeBanner extends StatelessWidget {
           left: 15,
           child: Text(
             S.of(context).joinOurAnimal,
-            style: context.text.s20w700.copyWith(color: context.color.background),
+            style: context.text.s20w500.copyWith(color: context.color.background),
           ),
         ),
         Positioned(

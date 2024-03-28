@@ -23,7 +23,7 @@ class DocumentWebView extends StatelessWidget {
         centerTitle: false,
         titleChild: Text(
           title,
-          style: context.text.s20w700,
+          style: context.text.s20w500,
         ),
       ),
       body: Padding(

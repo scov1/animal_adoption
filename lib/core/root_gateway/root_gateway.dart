@@ -22,7 +22,7 @@ class RootGateway extends Cubit<RootGatewayState> {
 
   void _updateGateways() {
     _test = Gateway(
-      uri: Uri(scheme: 'https', host: 'api.thecatapi.com/v1'),
+      uri: Uri(scheme: 'https', host: 'api.thecatapi.com'),
       token: () => 'live_UJQ5QGMSZAoVxdEIVuhiNCTlQUSjTHnPWI0aRwgqzUV2EtrcII4kOFAxU6rSw90J',
       onAuthError: (error) {
         emit(RootGatewayState(authError: error));

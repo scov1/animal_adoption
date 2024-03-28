@@ -19,8 +19,6 @@ dependencies:
   loader_overlay: ^4.0.0
   flutter_svg: 2.0.10+1
   carousel_slider: ^4.2.1
-  cloud_firestore: ^4.15.8
-  firebase_core: ^2.27.0
   equatable: ^2.0.5
   flutter_bloc: ^8.1.4
   flutter_inappwebview: ^5.4.4

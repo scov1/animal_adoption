@@ -189,6 +189,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Something went wrong`
+  String get somethingWentWrong {
+    return Intl.message(
+      'Something went wrong',
+      name: 'somethingWentWrong',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Retry`
+  String get retry {
+    return Intl.message(
+      'Retry',
+      name: 'retry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Prepare the apartment`
+  String get prepareApartment {
+    return Intl.message(
+      'Prepare the apartment',
+      name: 'prepareApartment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How to make your apartment a safe and cozy place for your pet?`
+  String get howToMakeAppartment {
+    return Intl.message(
+      'How to make your apartment a safe and cozy place for your pet?',
+      name: 'howToMakeAppartment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pet Essentials`
+  String get petEssetials {
+    return Intl.message(
+      'Pet Essentials',
+      name: 'petEssetials',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What should you buy first?`
+  String get whatShouldYouBuy {
+    return Intl.message(
+      'What should you buy first?',
+      name: 'whatShouldYouBuy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing a pet`
+  String get choosingPet {
+    return Intl.message(
+      'Choosing a pet',
+      name: 'choosingPet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What you should pay attention to when choosing a pet?`
+  String get whatYouShouldPay {
+    return Intl.message(
+      'What you should pay attention to when choosing a pet?',
+      name: 'whatYouShouldPay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Articles`
+  String get articles {
+    return Intl.message(
+      'Articles',
+      name: 'articles',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

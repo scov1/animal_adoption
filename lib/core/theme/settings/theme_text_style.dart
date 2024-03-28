@@ -98,10 +98,10 @@ class ThemeTextStyles {
     fontFamily: 'Comfortaa',
   );
 
-  late final s20w700 = TextStyle(
+  late final s20w500 = TextStyle(
     fontSize: 20,
     color: _colors.textPrimary,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w500,
     fontFamily: 'Montserrat',
   );
 

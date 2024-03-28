@@ -31,6 +31,15 @@ class $AssetsSvgGen {
   /// File path: assets/svg/arrow_back.svg
   String get arrowBack => 'assets/svg/arrow_back.svg';
 
+  /// File path: assets/svg/ic_article_1.svg
+  String get icArticle1 => 'assets/svg/ic_article_1.svg';
+
+  /// File path: assets/svg/ic_article_2.svg
+  String get icArticle2 => 'assets/svg/ic_article_2.svg';
+
+  /// File path: assets/svg/ic_article_3.svg
+  String get icArticle3 => 'assets/svg/ic_article_3.svg';
+
   /// File path: assets/svg/ic_favorite.svg
   String get icFavorite => 'assets/svg/ic_favorite.svg';
 
@@ -58,6 +67,9 @@ class $AssetsSvgGen {
   /// List of all assets
   List<String> get values => [
         arrowBack,
+        icArticle1,
+        icArticle2,
+        icArticle3,
         icFavorite,
         icHome,
         icPaw,

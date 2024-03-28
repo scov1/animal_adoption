@@ -23,8 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "adoptPets": MessageLookupByLibrary.simpleMessage("Adopt pets"),
+        "articles": MessageLookupByLibrary.simpleMessage("Articles"),
         "browseProfiles": MessageLookupByLibrary.simpleMessage(
             "Browse profiles photos, and description to find pets that match your criteria"),
+        "choosingPet": MessageLookupByLibrary.simpleMessage("Choosing a pet"),
         "community": MessageLookupByLibrary.simpleMessage("Community"),
         "connectAndAdopt":
             MessageLookupByLibrary.simpleMessage("Connect and Adopt"),
@@ -34,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Discover Tailored Mathes"),
         "everyoneDeservesFamiliy":
             MessageLookupByLibrary.simpleMessage("Everyone deserves a family."),
+        "howToMakeAppartment": MessageLookupByLibrary.simpleMessage(
+            "How to make your apartment a safe and cozy place for your pet?"),
         "joinNow": MessageLookupByLibrary.simpleMessage("Join Now"),
         "joinOurAnimal": MessageLookupByLibrary.simpleMessage(
             "Join our animal\nlovers Community"),
@@ -42,7 +46,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "personalizeYourPref": MessageLookupByLibrary.simpleMessage(
             "Personalize your preferences"),
+        "petEssetials": MessageLookupByLibrary.simpleMessage("Pet Essentials"),
+        "prepareApartment":
+            MessageLookupByLibrary.simpleMessage("Prepare the apartment"),
+        "retry": MessageLookupByLibrary.simpleMessage("Retry"),
         "showAll": MessageLookupByLibrary.simpleMessage("show all"),
-        "start": MessageLookupByLibrary.simpleMessage("Start")
+        "somethingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Something went wrong"),
+        "start": MessageLookupByLibrary.simpleMessage("Start"),
+        "whatShouldYouBuy":
+            MessageLookupByLibrary.simpleMessage("What should you buy first?"),
+        "whatYouShouldPay": MessageLookupByLibrary.simpleMessage(
+            "What you should pay attention to when choosing a pet?")
       };
 }

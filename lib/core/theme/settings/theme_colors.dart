@@ -27,6 +27,7 @@ class ThemeColors {
     this.paleMint = const Color(0xFFE4F3F4),
     this.mint = const Color(0xFFC5EEF0),
     this.orangeText = const Color(0xFFEFA02A),
+    this.lavanderBg = const Color(0xFFcdc6ff),
   });
 
   final Color accent;
@@ -52,6 +53,7 @@ class ThemeColors {
   final Color paleMint;
   final Color mint;
   final Color orangeText;
+  final Color lavanderBg;
 
   ThemeColors copyWith({
     Color? accent,
@@ -72,6 +74,7 @@ class ThemeColors {
     Color? paleMint,
     Color? mint,
     Color? orangeText,
+    Color? lavanderBg,
   }) {
     return ThemeColors(
       accent: accent ?? this.accent,
@@ -92,6 +95,7 @@ class ThemeColors {
       paleMint: paleMint ?? this.paleMint,
       mint: mint ?? this.mint,
       orangeText: orangeText ?? this.orangeText,
+      lavanderBg: lavanderBg ?? this.lavanderBg,
     );
   }
 }
