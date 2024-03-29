@@ -23,6 +23,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "adoptPets": MessageLookupByLibrary.simpleMessage("Adopt pets"),
+        "articleOne": MessageLookupByLibrary.simpleMessage(
+            "When preparing for a puppy or a kitten, be sure your apartment and neighborhood are pet friendly. Before signing the adoption paperwork, check with your landlord.\nRe-evaluate your lease and check if you are allowed to bring a pet into the apartment. If your apartment is not pet friendly, you can start looking for another one. "),
+        "articleThree": MessageLookupByLibrary.simpleMessage(
+            "Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!"),
+        "articleTwo": MessageLookupByLibrary.simpleMessage(""),
         "articles": MessageLookupByLibrary.simpleMessage("Articles"),
         "browseProfiles": MessageLookupByLibrary.simpleMessage(
             "Browse profiles photos, and description to find pets that match your criteria"),

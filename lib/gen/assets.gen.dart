@@ -18,11 +18,59 @@ class $AssetsImagesGen {
   /// File path: assets/images/cat_1.jpeg
   AssetGenImage get cat1 => const AssetGenImage('assets/images/cat_1.jpeg');
 
+  /// File path: assets/images/ic_basket_1.png
+  AssetGenImage get icBasket1 =>
+      const AssetGenImage('assets/images/ic_basket_1.png');
+
+  /// File path: assets/images/ic_basket_2.png
+  AssetGenImage get icBasket2 =>
+      const AssetGenImage('assets/images/ic_basket_2.png');
+
+  /// File path: assets/images/ic_basket_3.png
+  AssetGenImage get icBasket3 =>
+      const AssetGenImage('assets/images/ic_basket_3.png');
+
+  /// File path: assets/images/ic_basket_4.png
+  AssetGenImage get icBasket4 =>
+      const AssetGenImage('assets/images/ic_basket_4.png');
+
+  /// File path: assets/images/ic_basket_5.png
+  AssetGenImage get icBasket5 =>
+      const AssetGenImage('assets/images/ic_basket_5.png');
+
+  /// File path: assets/images/ic_basket_6.png
+  AssetGenImage get icBasket6 =>
+      const AssetGenImage('assets/images/ic_basket_6.png');
+
+  /// File path: assets/images/ic_basket_7.png
+  AssetGenImage get icBasket7 =>
+      const AssetGenImage('assets/images/ic_basket_7.png');
+
+  /// File path: assets/images/ic_basket_8.png
+  AssetGenImage get icBasket8 =>
+      const AssetGenImage('assets/images/ic_basket_8.png');
+
+  /// File path: assets/images/shampoo.png
+  AssetGenImage get shampoo => const AssetGenImage('assets/images/shampoo.png');
+
   /// File path: assets/images/splash.png
   AssetGenImage get splash => const AssetGenImage('assets/images/splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [banner, cat1, splash];
+  List<AssetGenImage> get values => [
+        banner,
+        cat1,
+        icBasket1,
+        icBasket2,
+        icBasket3,
+        icBasket4,
+        icBasket5,
+        icBasket6,
+        icBasket7,
+        icBasket8,
+        shampoo,
+        splash
+      ];
 }
 
 class $AssetsSvgGen {

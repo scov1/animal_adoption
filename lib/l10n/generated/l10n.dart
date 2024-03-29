@@ -279,6 +279,36 @@ class S {
       args: [],
     );
   }
+
+  /// `When preparing for a puppy or a kitten, be sure your apartment and neighborhood are pet friendly. Before signing the adoption paperwork, check with your landlord.\nRe-evaluate your lease and check if you are allowed to bring a pet into the apartment. If your apartment is not pet friendly, you can start looking for another one. `
+  String get articleOne {
+    return Intl.message(
+      'When preparing for a puppy or a kitten, be sure your apartment and neighborhood are pet friendly. Before signing the adoption paperwork, check with your landlord.\nRe-evaluate your lease and check if you are allowed to bring a pet into the apartment. If your apartment is not pet friendly, you can start looking for another one. ',
+      name: 'articleOne',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get articleTwo {
+    return Intl.message(
+      '',
+      name: 'articleTwo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!`
+  String get articleThree {
+    return Intl.message(
+      'Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!',
+      name: 'articleThree',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
