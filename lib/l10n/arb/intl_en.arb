@@ -24,5 +24,15 @@
     "articles": "Articles",
     "articleOne": "When preparing for a puppy or a kitten, be sure your apartment and neighborhood are pet friendly. Before signing the adoption paperwork, check with your landlord.\nRe-evaluate your lease and check if you are allowed to bring a pet into the apartment. If your apartment is not pet friendly, you can start looking for another one. ",
     "articleTwo": "",
-    "articleThree": "Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!"
+    "articleThree": "Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!",
+    "search": "Search",
+    "serverIsNotReachable": "Server is not reachable. Please verify your internet connection and try again",
+    "problemConnectingToTheServer": "Problem connecting to the server. Please try again",
+    "oops": "Oops",
+    "sorryWeDidntFind": "Sorry, we didn't find any pet with that name.",
+    "male": "Male",
+    "female": "Female",
+    "health": "Health",
+    "personality": "Personality",
+    "breedCharacteristics": "Breed Characteristics"
 }

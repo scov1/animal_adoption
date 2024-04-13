@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/adopt.png
+  AssetGenImage get adopt => const AssetGenImage('assets/images/adopt.png');
+
   /// File path: assets/images/banner.png
   AssetGenImage get banner => const AssetGenImage('assets/images/banner.png');
 
@@ -50,6 +53,10 @@ class $AssetsImagesGen {
   AssetGenImage get icBasket8 =>
       const AssetGenImage('assets/images/ic_basket_8.png');
 
+  /// File path: assets/images/ic_filter.png
+  AssetGenImage get icFilter =>
+      const AssetGenImage('assets/images/ic_filter.png');
+
   /// File path: assets/images/shampoo.png
   AssetGenImage get shampoo => const AssetGenImage('assets/images/shampoo.png');
 
@@ -58,6 +65,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+        adopt,
         banner,
         cat1,
         icBasket1,
@@ -68,6 +76,7 @@ class $AssetsImagesGen {
         icBasket6,
         icBasket7,
         icBasket8,
+        icFilter,
         shampoo,
         splash
       ];
@@ -88,6 +97,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/ic_article_3.svg
   String get icArticle3 => 'assets/svg/ic_article_3.svg';
 
+  /// File path: assets/svg/ic_empty.svg
+  String get icEmpty => 'assets/svg/ic_empty.svg';
+
   /// File path: assets/svg/ic_favorite.svg
   String get icFavorite => 'assets/svg/ic_favorite.svg';
 
@@ -96,6 +108,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/ic_paw.svg
   String get icPaw => 'assets/svg/ic_paw.svg';
+
+  /// File path: assets/svg/ic_search.svg
+  String get icSearch => 'assets/svg/ic_search.svg';
 
   /// File path: assets/svg/ic_user.svg
   String get icUser => 'assets/svg/ic_user.svg';
@@ -118,9 +133,11 @@ class $AssetsSvgGen {
         icArticle1,
         icArticle2,
         icArticle3,
+        icEmpty,
         icFavorite,
         icHome,
         icPaw,
+        icSearch,
         icUser,
         onboard1,
         onboard2,

@@ -309,6 +309,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Server is not reachable. Please verify your internet connection and try again`
+  String get serverIsNotReachable {
+    return Intl.message(
+      'Server is not reachable. Please verify your internet connection and try again',
+      name: 'serverIsNotReachable',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Problem connecting to the server. Please try again`
+  String get problemConnectingToTheServer {
+    return Intl.message(
+      'Problem connecting to the server. Please try again',
+      name: 'problemConnectingToTheServer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Oops`
+  String get oops {
+    return Intl.message(
+      'Oops',
+      name: 'oops',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sorry, we didn't find any pet with that name.`
+  String get sorryWeDidntFind {
+    return Intl.message(
+      'Sorry, we didn\'t find any pet with that name.',
+      name: 'sorryWeDidntFind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Male`
+  String get male {
+    return Intl.message(
+      'Male',
+      name: 'male',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Female`
+  String get female {
+    return Intl.message(
+      'Female',
+      name: 'female',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health`
+  String get health {
+    return Intl.message(
+      'Health',
+      name: 'health',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personality`
+  String get personality {
+    return Intl.message(
+      'Personality',
+      name: 'personality',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Breed Characteristics`
+  String get breedCharacteristics {
+    return Intl.message(
+      'Breed Characteristics',
+      name: 'breedCharacteristics',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

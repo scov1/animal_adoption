@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../gen/assets.gen.dart';
-import '../../../l10n/generated/l10n.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/repository/theme_repo.dart';
 import '../core_di.dart';

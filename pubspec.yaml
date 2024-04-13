@@ -22,6 +22,10 @@ dependencies:
   equatable: ^2.0.5
   flutter_bloc: ^8.1.4
   flutter_inappwebview: ^5.4.4
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  provider: ^6.1.2
+  another_flushbar: ^1.12.30
 
   flutter_localizations:
     sdk: flutter
@@ -32,6 +36,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.4.8
   flutter_gen: ^5.4.0
+  hive_generator: ^2.0.1
 
 flutter_intl:
   enabled: true

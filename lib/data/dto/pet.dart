@@ -1,46 +1,18 @@
+import 'package:hive/hive.dart';
+
 import 'images.dart';
 
-class Pet {
-  Weight? weight;
-  String? id;
-  String? name;
-  String? cfaUrl;
-  String? vetstreetUrl;
-  String? vcahospitalsUrl;
-  String? temperament;
-  String? origin;
-  String? countryCodes;
-  String? countryCode;
-  String? description;
-  String? lifeSpan;
-  int? indoor;
-  int? lap;
-  String? altNames;
-  int? adaptability;
-  int? affectionLevel;
-  int? childFriendly;
-  int? dogFriendly;
-  int? energyLevel;
-  int? grooming;
-  int? healthIssues;
-  int? intelligence;
-  int? sheddingLevel;
-  int? socialNeeds;
-  int? strangerFriendly;
-  int? vocalisation;
-  int? experimental;
-  int? hairless;
-  int? natural;
-  int? rare;
-  int? rex;
-  int? suppressedTail;
-  int? shortLegs;
-  String? wikipediaUrl;
-  int? hypoallergenic;
-  String? referenceImageId;
-  ImageDto? image;
-  String? imageUrl;
+part 'pet.g.dart';
 
+class Pets {
+  Pets({required this.pets, required this.petsAllCount});
+
+  final List<Pet> pets;
+  final int? petsAllCount;
+}
+
+@HiveType(typeId: 1)
+class Pet {
   Pet({
     this.weight,
     this.id,
@@ -81,7 +53,69 @@ class Pet {
     this.referenceImageId,
     this.image,
     this.imageUrl,
+    this.catFriendly,
+    this.favoriteId,
   });
+
+  Weight? weight;
+  @HiveField(0)
+  String? id;
+  @HiveField(1)
+  String? name;
+  String? cfaUrl;
+  @HiveField(2)
+  String? vetstreetUrl;
+  String? vcahospitalsUrl;
+  @HiveField(3)
+  String? temperament;
+  @HiveField(4)
+  String? origin;
+  String? countryCodes;
+  String? countryCode;
+  @HiveField(5)
+  String? description;
+  @HiveField(6)
+  String? lifeSpan;
+  int? indoor;
+  int? lap;
+  String? altNames;
+  @HiveField(7)
+  int? adaptability;
+  @HiveField(8)
+  int? affectionLevel;
+  @HiveField(9)
+  int? childFriendly;
+  @HiveField(10)
+  int? dogFriendly;
+  @HiveField(11)
+  int? energyLevel;
+  int? grooming;
+  int? healthIssues;
+  @HiveField(12)
+  int? intelligence;
+  int? sheddingLevel;
+  @HiveField(13)
+  int? socialNeeds;
+  @HiveField(14)
+  int? strangerFriendly;
+  int? vocalisation;
+  int? experimental;
+  int? hairless;
+  int? natural;
+  int? rare;
+  int? rex;
+  int? suppressedTail;
+  int? shortLegs;
+  String? wikipediaUrl;
+  int? hypoallergenic;
+  String? referenceImageId;
+  ImageDto? image;
+  @HiveField(15)
+  String? imageUrl;
+  @HiveField(16)
+  int? catFriendly;
+  @HiveField(17)
+  int? favoriteId;
 
   Pet.fromJson(Map<String, dynamic> json) {
     weight = json['weight'] != null ? new Weight.fromJson(json['weight']) : null;
@@ -121,6 +155,7 @@ class Pet {
     wikipediaUrl = json['wikipedia_url'];
     hypoallergenic = json['hypoallergenic'];
     referenceImageId = json['reference_image_id'];
+    catFriendly = json['catFriendly'];
   }
 
   Map<String, dynamic> toJson() {
@@ -164,7 +199,51 @@ class Pet {
     data['wikipedia_url'] = this.wikipediaUrl;
     data['hypoallergenic'] = this.hypoallergenic;
     data['reference_image_id'] = this.referenceImageId;
+    data['catFriendly'] = this.catFriendly;
     return data;
+  }
+
+  Pet copyWith({bool? isFavorite}) {
+    return Pet(
+      weight: weight,
+      id: id ?? this.id,
+      name: name ?? this.name,
+      cfaUrl: cfaUrl ?? this.cfaUrl,
+      vetstreetUrl: vetstreetUrl ?? this.vetstreetUrl,
+      vcahospitalsUrl: vcahospitalsUrl ?? this.vcahospitalsUrl,
+      temperament: temperament ?? this.temperament,
+      origin: origin ?? this.origin,
+      countryCodes: countryCodes ?? this.countryCodes,
+      countryCode: countryCode ?? this.countryCode,
+      description: description ?? this.description,
+      lifeSpan: lifeSpan ?? this.lifeSpan,
+      indoor: indoor ?? this.indoor,
+      lap: lap ?? this.lap,
+      altNames: altNames ?? this.altNames,
+      adaptability: adaptability ?? this.adaptability,
+      affectionLevel: affectionLevel ?? this.affectionLevel,
+      childFriendly: childFriendly ?? this.childFriendly,
+      dogFriendly: dogFriendly ?? this.dogFriendly,
+      energyLevel: energyLevel ?? this.energyLevel,
+      grooming: grooming ?? this.grooming,
+      healthIssues: healthIssues ?? this.healthIssues,
+      intelligence: intelligence ?? this.intelligence,
+      sheddingLevel: sheddingLevel ?? this.sheddingLevel,
+      socialNeeds: socialNeeds ?? this.socialNeeds,
+      strangerFriendly: strangerFriendly ?? this.strangerFriendly,
+      vocalisation: vocalisation ?? this.vocalisation,
+      experimental: experimental ?? this.experimental,
+      hairless: hairless ?? this.hairless,
+      natural: natural ?? this.natural,
+      rare: rare ?? this.rare,
+      rex: rex ?? this.rex,
+      suppressedTail: suppressedTail ?? this.suppressedTail,
+      shortLegs: shortLegs ?? this.shortLegs,
+      wikipediaUrl: wikipediaUrl ?? this.wikipediaUrl,
+      hypoallergenic: hypoallergenic ?? this.hypoallergenic,
+      referenceImageId: referenceImageId ?? this.referenceImageId,
+      catFriendly: catFriendly ?? this.catFriendly,
+    );
   }
 }
 

@@ -6,6 +6,7 @@ import '../../core/navigator/navigator1_helper.dart';
 import '../../widgets/loader_overlay/app_loader_stack.dart';
 import '../../widgets/nav_bar/nav_bar.dart';
 import '../home_screen/home_screen.dart';
+import '../pets_screen/pets_screen.dart';
 import 'controller/primary_tab_controller.dart';
 import 'controller/states.dart';
 
@@ -39,25 +40,20 @@ class _RootScreenState extends State<RootScreen> with WidgetsBindingObserver {
                     HomeScreen(),
                   ),
                 ),
-                // Navigator(
-                //   key: controller.navigatorKeys[1],
-                //   onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(
-                //     const SearchScreen(),
-                //   ),
-                // ),
-                // Navigator(
-                //   key: controller.navigatorKeys[2],
-                //   onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(
-                //     const LibraryScreen(),
-                //   ),
-                // ),
-                // Navigator(
-                //   key: controller.navigatorKeys[3],
-                //   onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(
-                //     //const SizedBox.shrink()
-                //     const ProfileScreen(),
-                //   ),
-                // ),
+                Navigator(
+                  key: controller.navigatorKeys[1],
+                  onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(
+                    PetsScreen(),
+                  ),
+                ),
+                Navigator(
+                  key: controller.navigatorKeys[2],
+                  onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(const SizedBox.shrink()),
+                ),
+                Navigator(
+                  key: controller.navigatorKeys[3],
+                  onGenerateRoute: (_) => NavigatorHelper.adaptiveRoute(const SizedBox.shrink()),
+                ),
               ],
             ),
           ),

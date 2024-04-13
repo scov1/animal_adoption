@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Allergies. Some people are allergic to the dander or saliva that comes with dogs and cats.Your space. Some pets need more space than others, and some landlords or management companies don’t allow pets.Your life. \nLiving with pets provides many physical and mental health benefits. Personality and temperament. Meet before you get your new companion!"),
         "articleTwo": MessageLookupByLibrary.simpleMessage(""),
         "articles": MessageLookupByLibrary.simpleMessage("Articles"),
+        "breedCharacteristics":
+            MessageLookupByLibrary.simpleMessage("Breed Characteristics"),
         "browseProfiles": MessageLookupByLibrary.simpleMessage(
             "Browse profiles photos, and description to find pets that match your criteria"),
         "choosingPet": MessageLookupByLibrary.simpleMessage("Choosing a pet"),
@@ -41,23 +43,35 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Discover Tailored Mathes"),
         "everyoneDeservesFamiliy":
             MessageLookupByLibrary.simpleMessage("Everyone deserves a family."),
+        "female": MessageLookupByLibrary.simpleMessage("Female"),
+        "health": MessageLookupByLibrary.simpleMessage("Health"),
         "howToMakeAppartment": MessageLookupByLibrary.simpleMessage(
             "How to make your apartment a safe and cozy place for your pet?"),
         "joinNow": MessageLookupByLibrary.simpleMessage("Join Now"),
         "joinOurAnimal": MessageLookupByLibrary.simpleMessage(
             "Join our animal\nlovers Community"),
+        "male": MessageLookupByLibrary.simpleMessage("Male"),
         "messageShelters": MessageLookupByLibrary.simpleMessage(
             "Message shelters and make the decision to adopt your new furry friend"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "oops": MessageLookupByLibrary.simpleMessage("Oops"),
+        "personality": MessageLookupByLibrary.simpleMessage("Personality"),
         "personalizeYourPref": MessageLookupByLibrary.simpleMessage(
             "Personalize your preferences"),
         "petEssetials": MessageLookupByLibrary.simpleMessage("Pet Essentials"),
         "prepareApartment":
             MessageLookupByLibrary.simpleMessage("Prepare the apartment"),
+        "problemConnectingToTheServer": MessageLookupByLibrary.simpleMessage(
+            "Problem connecting to the server. Please try again"),
         "retry": MessageLookupByLibrary.simpleMessage("Retry"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "serverIsNotReachable": MessageLookupByLibrary.simpleMessage(
+            "Server is not reachable. Please verify your internet connection and try again"),
         "showAll": MessageLookupByLibrary.simpleMessage("show all"),
         "somethingWentWrong":
             MessageLookupByLibrary.simpleMessage("Something went wrong"),
+        "sorryWeDidntFind": MessageLookupByLibrary.simpleMessage(
+            "Sorry, we didn\'t find any pet with that name."),
         "start": MessageLookupByLibrary.simpleMessage("Start"),
         "whatShouldYouBuy":
             MessageLookupByLibrary.simpleMessage("What should you buy first?"),

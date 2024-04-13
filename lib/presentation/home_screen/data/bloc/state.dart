@@ -11,7 +11,6 @@ class DataHomeState extends HomeState {
   final List<Pet> pets;
 }
 
-class ErrorHomeState extends HomeState {
-  ErrorHomeState({required this.error});
-  final String error;
+class ErrorHomeState extends BaseBlocError implements HomeState {
+  ErrorHomeState(Object error, StackTrace stackTrace) : super(error, stackTrace);
 }
