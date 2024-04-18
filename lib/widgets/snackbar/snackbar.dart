@@ -3,16 +3,19 @@ import 'package:flutter/material.dart';
 
 import '../../core/theme/app_theme.dart';
 
-///snack bar for showing errors and other notifications
-Future<void> showCustomSnackbar(BuildContext context, String content, {String? errorText}) async {
+Future<void> showCustomSnackbar(
+  BuildContext context,
+  String text,
+  Color color,
+) async {
   await _buildCustomSnackBarWidget(
     context,
-    content,
-    errorText: errorText,
+    text,
+    color,
   ).show(context);
 }
 
-Flushbar _buildCustomSnackBarWidget(BuildContext context, String content, {String? errorText}) {
+Flushbar _buildCustomSnackBarWidget(BuildContext context, String text, color) {
   return Flushbar(
     backgroundColor: Colors.transparent,
     padding: const EdgeInsets.all(0),
@@ -38,14 +41,14 @@ Flushbar _buildCustomSnackBarWidget(BuildContext context, String content, {Strin
         children: [
           Expanded(
             child: Text(
-              content,
-              style: context.text.s14w700.copyWith(color: context.color.error),
+              text,
+              style: context.text.s14w700.copyWith(color: color),
             ),
           ),
           Icon(
             Icons.close,
             size: 26,
-            color: context.color.error,
+            color: color,
           )
         ],
       ),

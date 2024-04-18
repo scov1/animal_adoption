@@ -409,6 +409,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Energy Level`
+  String get energyLevel {
+    return Intl.message(
+      'Energy Level',
+      name: 'energyLevel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Social Needs`
+  String get socialNeeds {
+    return Intl.message(
+      'Social Needs',
+      name: 'socialNeeds',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adaptability`
+  String get adaptability {
+    return Intl.message(
+      'Adaptability',
+      name: 'adaptability',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Child Friendly`
+  String get childFriendly {
+    return Intl.message(
+      'Child Friendly',
+      name: 'childFriendly',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Intelligence`
+  String get intelligence {
+    return Intl.message(
+      'Intelligence',
+      name: 'intelligence',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health Issues`
+  String get healthIssues {
+    return Intl.message(
+      'Health Issues',
+      name: 'healthIssues',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dog Friendly`
+  String get dogFriendly {
+    return Intl.message(
+      'Dog Friendly',
+      name: 'dogFriendly',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Successfully shared!`
+  String get successfullyShared {
+    return Intl.message(
+      'Successfully shared!',
+      name: 'successfullyShared',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sorry, you can't share this pet`
+  String get sorryYouCantShare {
+    return Intl.message(
+      'Sorry, you can\'t share this pet',
+      name: 'sorryYouCantShare',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

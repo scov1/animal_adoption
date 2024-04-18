@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "adaptability": MessageLookupByLibrary.simpleMessage("Adaptability"),
         "adoptPets": MessageLookupByLibrary.simpleMessage("Adopt pets"),
         "articleOne": MessageLookupByLibrary.simpleMessage(
             "When preparing for a puppy or a kitten, be sure your apartment and neighborhood are pet friendly. Before signing the adoption paperwork, check with your landlord.\nRe-evaluate your lease and check if you are allowed to bring a pet into the apartment. If your apartment is not pet friendly, you can start looking for another one. "),
@@ -33,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Breed Characteristics"),
         "browseProfiles": MessageLookupByLibrary.simpleMessage(
             "Browse profiles photos, and description to find pets that match your criteria"),
+        "childFriendly": MessageLookupByLibrary.simpleMessage("Child Friendly"),
         "choosingPet": MessageLookupByLibrary.simpleMessage("Choosing a pet"),
         "community": MessageLookupByLibrary.simpleMessage("Community"),
         "connectAndAdopt":
@@ -41,12 +43,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "Customize your ideal pet by setting species, age, size and temperament"),
         "discoverTailoredMathes":
             MessageLookupByLibrary.simpleMessage("Discover Tailored Mathes"),
+        "dogFriendly": MessageLookupByLibrary.simpleMessage("Dog Friendly"),
+        "energyLevel": MessageLookupByLibrary.simpleMessage("Energy Level"),
         "everyoneDeservesFamiliy":
             MessageLookupByLibrary.simpleMessage("Everyone deserves a family."),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "health": MessageLookupByLibrary.simpleMessage("Health"),
+        "healthIssues": MessageLookupByLibrary.simpleMessage("Health Issues"),
         "howToMakeAppartment": MessageLookupByLibrary.simpleMessage(
             "How to make your apartment a safe and cozy place for your pet?"),
+        "intelligence": MessageLookupByLibrary.simpleMessage("Intelligence"),
         "joinNow": MessageLookupByLibrary.simpleMessage("Join Now"),
         "joinOurAnimal": MessageLookupByLibrary.simpleMessage(
             "Join our animal\nlovers Community"),
@@ -68,11 +74,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "serverIsNotReachable": MessageLookupByLibrary.simpleMessage(
             "Server is not reachable. Please verify your internet connection and try again"),
         "showAll": MessageLookupByLibrary.simpleMessage("show all"),
+        "socialNeeds": MessageLookupByLibrary.simpleMessage("Social Needs"),
         "somethingWentWrong":
             MessageLookupByLibrary.simpleMessage("Something went wrong"),
         "sorryWeDidntFind": MessageLookupByLibrary.simpleMessage(
             "Sorry, we didn\'t find any pet with that name."),
+        "sorryYouCantShare": MessageLookupByLibrary.simpleMessage(
+            "Sorry, you can\'t share this pet"),
         "start": MessageLookupByLibrary.simpleMessage("Start"),
+        "successfullyShared":
+            MessageLookupByLibrary.simpleMessage("Successfully shared!"),
         "whatShouldYouBuy":
             MessageLookupByLibrary.simpleMessage("What should you buy first?"),
         "whatYouShouldPay": MessageLookupByLibrary.simpleMessage(

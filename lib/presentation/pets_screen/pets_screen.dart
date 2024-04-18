@@ -82,7 +82,8 @@ class _PetsScreenState extends State<PetsScreen> {
               bloc: BlocProvider.of<PetsBloc>(context),
               listener: (context, state) {
                 if (state is ErrorPetsState) {
-                  showCustomSnackbar(context, context.read<ErrorHandler>().handleError(state));
+                  showCustomSnackbar(context, context.read<ErrorHandler>().handleError(state),
+                      context.color.error);
                 }
               },
               buildWhen: (p, c) =>

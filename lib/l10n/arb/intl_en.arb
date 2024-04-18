@@ -34,5 +34,14 @@
     "female": "Female",
     "health": "Health",
     "personality": "Personality",
-    "breedCharacteristics": "Breed Characteristics"
+    "breedCharacteristics": "Breed Characteristics",
+    "energyLevel": "Energy Level",
+    "socialNeeds": "Social Needs",
+    "adaptability": "Adaptability",
+    "childFriendly": "Child Friendly",
+    "intelligence": "Intelligence",
+    "healthIssues": "Health Issues",
+    "dogFriendly": "Dog Friendly",
+    "successfullyShared": "Successfully shared!",
+    "sorryYouCantShare": "Sorry, you can't share this pet"
 }
