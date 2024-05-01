@@ -5,7 +5,6 @@ import 'interceptors/error_interceptor.dart';
 
 class Gateway {
   Gateway({
-    // required String localeCode,
     required String Function() token,
     required this.uri,
     required ValueChanged<DioException> onAuthError,

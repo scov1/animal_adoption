@@ -100,6 +100,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/ic_empty.svg
   String get icEmpty => 'assets/svg/ic_empty.svg';
 
+  /// File path: assets/svg/ic_empty_favorite.svg
+  String get icEmptyFavorite => 'assets/svg/ic_empty_favorite.svg';
+
   /// File path: assets/svg/ic_favorite.svg
   String get icFavorite => 'assets/svg/ic_favorite.svg';
 
@@ -134,6 +137,7 @@ class $AssetsSvgGen {
         icArticle2,
         icArticle3,
         icEmpty,
+        icEmptyFavorite,
         icFavorite,
         icHome,
         icPaw,

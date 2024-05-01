@@ -27,6 +27,10 @@ dependencies:
   provider: ^6.1.2
   another_flushbar: ^1.12.30
   share_plus: ^7.2.2
+  validators: ^3.0.0
+  flutter_multi_formatter: ^2.12.4
+  mask_text_input_formatter: ^2.9.0
+
 
   flutter_localizations:
     sdk: flutter

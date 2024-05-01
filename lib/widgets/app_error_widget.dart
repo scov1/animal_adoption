@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../core/theme/app_theme.dart';
+import '../gen/assets.gen.dart';
 import '../l10n/generated/l10n.dart';
 
 class AppErrorWidget extends StatelessWidget {
@@ -22,7 +23,7 @@ class AppErrorWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset('assets/icons_svg/tree.svg'),
+          SvgPicture.asset(Assets.svg.icPaw),
           const SizedBox(height: 18),
           Text(message ?? S.of(context).somethingWentWrong),
           const SizedBox(height: 18),

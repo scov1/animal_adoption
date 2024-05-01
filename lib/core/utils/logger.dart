@@ -5,7 +5,6 @@ import 'dart:typed_data';
 import 'package:dio/dio.dart';
 import 'package:stack_trace/stack_trace.dart';
 
-//import 'extensions/int.dart';
 import 'text_color.dart';
 
 class Log {
@@ -71,7 +70,6 @@ class Log {
   static String toJson(Object? data) {
     final encoder = JsonEncoder.withIndent(
       '  ',
-      //  (value) => _shortenString(value.toString()),
     );
     return encoder.convert(data);
   }
@@ -160,21 +158,9 @@ dynamic _verboseOptions(RequestOptions options) {
   return _shortenObject(reqData);
 }
 
-// String _shortenString(String text) {
-//   if (text.length < 350) {
-//     return text;
-//   } else if (text.length >= 350 && text.length < 1024) {
-//     return '${text.substring(0, 350)}...';
-//   } else {
-//     final bytes = utf8.encode(text);
-//     return '${text.substring(0, 80)}... ${bytes.length.toKb} Kb';
-//   }
-// }
-
 dynamic _shortenObject(dynamic object) {
   if (object is String) {
     return object;
-    //_shortenString(object);
   } else if (object is Map) {
     return object.map((key, value) => MapEntry(key, _shortenObject(value)));
   } else if (object is List) {
