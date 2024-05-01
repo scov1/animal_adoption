@@ -14,7 +14,7 @@ import 'core/navigator/routes.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/repository/theme_repo.dart';
 import 'core/utils/logger.dart';
-import 'data/dto/pet.dart';
+import 'data/vo/pet.dart';
 import 'l10n/generated/l10n.dart';
 import 'l10n/locale_repo.dart';
 
@@ -51,7 +51,7 @@ void main() {
                         ],
                         locale: locale,
                         theme: theme.data,
-                        title: 'Nazvanie',
+                        title: 'Adopt a pet',
                         routes: Routes.routes,
                         home: LoaderOverlay(
                           useDefaultLoading: false,

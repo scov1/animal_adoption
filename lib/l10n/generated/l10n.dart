@@ -499,6 +499,326 @@ class S {
       args: [],
     );
   }
+
+  /// `Adopt now`
+  String get adoptNow {
+    return Intl.message(
+      'Adopt now',
+      name: 'adoptNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nobody added`
+  String get nobodyAdded {
+    return Intl.message(
+      'Nobody added',
+      name: 'nobodyAdded',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tap on the button to choose a pet`
+  String get tapOnThePlus {
+    return Intl.message(
+      'Tap on the button to choose a pet',
+      name: 'tapOnThePlus',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose`
+  String get choose {
+    return Intl.message(
+      'Choose',
+      name: 'choose',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leave an application for adoption`
+  String get leaveAnApplication {
+    return Intl.message(
+      'Leave an application for adoption',
+      name: 'leaveAnApplication',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone number`
+  String get phoneNumber {
+    return Intl.message(
+      'Phone number',
+      name: 'phoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone is required`
+  String get phoneIsRequired {
+    return Intl.message(
+      'Phone is required',
+      name: 'phoneIsRequired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone is incorrect`
+  String get phoneIsIncorrect {
+    return Intl.message(
+      'Phone is incorrect',
+      name: 'phoneIsIncorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email is required`
+  String get emailIsRequired {
+    return Intl.message(
+      'Email is required',
+      name: 'emailIsRequired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This field cannot be empty`
+  String get thisFieldCantBeEmpty {
+    return Intl.message(
+      'This field cannot be empty',
+      name: 'thisFieldCantBeEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First name`
+  String get firstName {
+    return Intl.message(
+      'First name',
+      name: 'firstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last name`
+  String get lastName {
+    return Intl.message(
+      'Last name',
+      name: 'lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name contains invalid characters`
+  String get nameContainsInvalidCharacters {
+    return Intl.message(
+      'Name contains invalid characters',
+      name: 'nameContainsInvalidCharacters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit`
+  String get submit {
+    return Intl.message(
+      'Submit',
+      name: 'submit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Our manager will call you back soon`
+  String get ourManagerCallBack {
+    return Intl.message(
+      'Our manager will call you back soon',
+      name: 'ourManagerCallBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorrect number of characters in the phone number`
+  String get incorrectNumberOfCharactersPhoneNumber {
+    return Intl.message(
+      'Incorrect number of characters in the phone number',
+      name: 'incorrectNumberOfCharactersPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close`
+  String get close {
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Success! Your request has been sent, we will respond as soon as possible. Thank You!`
+  String get successWeCallBack {
+    return Intl.message(
+      'Success! Your request has been sent, we will respond as soon as possible. Thank You!',
+      name: 'successWeCallBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pet food`
+  String get food {
+    return Intl.message(
+      'Pet food',
+      name: 'food',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food and water bowl`
+  String get waterBowl {
+    return Intl.message(
+      'Food and water bowl',
+      name: 'waterBowl',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Toys`
+  String get toys {
+    return Intl.message(
+      'Toys',
+      name: 'toys',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bedding`
+  String get bedding {
+    return Intl.message(
+      'Bedding',
+      name: 'bedding',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leash and collar`
+  String get leashAndCollar {
+    return Intl.message(
+      'Leash and collar',
+      name: 'leashAndCollar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Scratching post (for cats)`
+  String get scratchingPost {
+    return Intl.message(
+      'Scratching post (for cats)',
+      name: 'scratchingPost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Litter box and litter`
+  String get litterBox {
+    return Intl.message(
+      'Litter box and litter',
+      name: 'litterBox',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Brush and shampoo`
+  String get brushAndShampoo {
+    return Intl.message(
+      'Brush and shampoo',
+      name: 'brushAndShampoo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Everyone`
+  String get everyone {
+    return Intl.message(
+      'Everyone',
+      name: 'everyone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `deserves`
+  String get deserves {
+    return Intl.message(
+      'deserves',
+      name: 'deserves',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `a family`
+  String get aFamily {
+    return Intl.message(
+      'a family',
+      name: 'aFamily',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../gen/assets.gen.dart';
+import '../../../l10n/generated/l10n.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/repository/theme_repo.dart';
 import '../core_di.dart';
@@ -41,12 +42,12 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: Image.asset(Assets.images.splash.path),
                   ),
                 ),
-                Text('Everyone', style: context.text.s30w900),
+                Text(S.of(context).everyone, style: context.text.s30w900),
                 Text(
-                  'deserves',
+                  S.of(context).deserves,
                   style: context.text.s30w900.copyWith(color: context.color.orangeText),
                 ),
-                Text('a family.', style: context.text.s30w900),
+                Text(S.of(context).aFamily, style: context.text.s30w900),
                 const SizedBox(height: 20),
               ],
             ),

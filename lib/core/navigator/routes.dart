@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../presentation/home_screen/home_screen.dart';
-import '../../presentation/onboarding_screen/onboarding_screen.dart';
-import '../../presentation/root/root_screen.dart';
+import '../../home/presentation/home_screen.dart';
+import '../../onboarding/presentation/onboarding_screen.dart';
+import '../../root/root_screen.dart';
 
 // создан только для цели показать один из способов навигации
 

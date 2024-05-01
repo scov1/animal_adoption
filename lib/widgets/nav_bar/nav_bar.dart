@@ -64,15 +64,6 @@ class _NavBarState extends State<NavBar> {
             label: '',
           ),
         ),
-        BottomNavigationBarItem(
-          label: '',
-          icon: NavBarItem(
-            isActive: widget.current == 3,
-            activeIconPath: Assets.svg.icUser,
-            inactiveIconPath: Assets.svg.icUser,
-            label: '',
-          ),
-        ),
       ],
     );
   }

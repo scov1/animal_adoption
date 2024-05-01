@@ -64,8 +64,8 @@ class ThemeButtonStyles {
     side: BorderSide(color: _color.textPrimary),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     padding: const EdgeInsets.symmetric(
-      vertical: 10.0,
-      horizontal: 24.0,
+      vertical: 8.0,
+      horizontal: 20.0,
     ),
     textStyle: _style.s16w600,
   );

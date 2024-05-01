@@ -28,7 +28,6 @@ class ErrorInterceptor implements Interceptor {
 
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
-    // print('🏐 {response.data} : ${response.data}');
     handler.next(response);
   }
 }

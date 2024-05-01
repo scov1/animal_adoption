@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
-import '../../presentation/home_screen/data/services/pets_service.dart';
+import '../../home/domain/services/pets_service.dart';
 import '../utils/error_handler/error_handler.dart';
 
 class RepositoriesProvider extends StatelessWidget {
@@ -14,9 +14,9 @@ class RepositoriesProvider extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
       providers: [
-        // ChangeNotifierProvider<PetsService>(
-        //   create: (context) => PetsService()..init(),
-        // ),
+        ChangeNotifierProvider<PetsService>(
+          create: (context) => PetsService()..init(),
+        ),
         RepositoryProvider(
           create: (context) => ErrorHandler(),
         ),
