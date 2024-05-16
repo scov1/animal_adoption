@@ -8,6 +8,7 @@ import '../../../widgets/app_error_widget.dart';
 import '../../../widgets/custom_app_bar.dart';
 import '../../root/controller/primary_tab_controller.dart';
 import '../domain/entity/home_entity.dart';
+import '../domain/services/pets_service.dart';
 import 'widgets/banner.dart';
 import 'widgets/home_grid_pets.dart';
 import 'widgets/list_articles.dart';
@@ -20,17 +21,54 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  String country = '';
+  String city = '';
+
   @override
   void initState() {
     BlocProvider.of<HomeEntity>(context).add(DataHomeEvent());
+    checkPermission();
     super.initState();
+  }
+
+  void checkPermission() async {
+    final permission = await context.read<PetsService>().requestPermission();
+    if (permission) {
+      final location = await context.read<PetsService>().getLocation();
+      country = location.first ?? '';
+      city = location.last ?? '';
+    }
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
+    print('🏐 country : ${city}');
     return Scaffold(
       appBar: CustomAppBar(
         canPop: false,
+        titleChild: country.isNotEmpty && city.isNotEmpty
+            ? Row(
+                children: [
+                  const SizedBox(width: 12),
+                  Icon(
+                    Icons.location_on_outlined,
+                    color: context.color.accentBg,
+                  ),
+                  const SizedBox(width: 5),
+                  Text(
+                    '$country, ',
+                    style: context.text.s14w700.copyWith(color: context.color.accentBg),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Text(
+                    city,
+                    style: context.text.s14w700.copyWith(color: context.color.accentBg),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              )
+            : const SizedBox.shrink(),
       ),
       body: RefreshIndicator(
         onRefresh: () async {
@@ -38,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
                 HomeBanner(),

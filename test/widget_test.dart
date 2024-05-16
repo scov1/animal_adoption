@@ -1,29 +1,134 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:animal_adoption/core/init/ui/splash_screen.dart';
-import 'package:flutter/material.dart';
+import 'dart:io' show Directory;
+import 'package:animal_adoption/data/vo/pet.dart';
+import 'package:animal_adoption/home/domain/services/pets_service.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+
+const String kTemporaryPath = 'temporaryPath';
+const String kApplicationSupportPath = 'applicationSupportPath';
+const String kApplicationDocumentsPath = 'applicationDocumentsPath';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(SplashScreen());
+  late Directory result;
+  late PetsService service;
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  setUpAll(() async {
+    PathProviderPlatform.instance = FakePathProviderPlatform();
+    result = await getTemporaryDirectory();
+    service = PetsService();
+    await Hive
+      ..initFlutter(result.path)
+      ..registerAdapter(PetAdapter());
   });
+
+  group('PetsService', () {
+    test(
+      'PetService addToFavorite successfully',
+      () async {
+        try {
+          await service.init();
+
+          service.listPets = [];
+
+          await service.addToFavorites(
+            Pet(
+              id: 'abys',
+              name: 'Abyssinian',
+              imageUrl: 'https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg',
+            ),
+          );
+
+          final data = service.listPets;
+          print('Get data: $data');
+
+          expect(
+            data[0].name,
+            'Abyssinian',
+          );
+          print('Test successful');
+        } catch (e) {
+          print('Test failed: $e');
+          rethrow;
+        }
+      },
+    );
+
+    test(
+      'PetService addToFavorite failed',
+      () async {
+        try {
+          await service.init();
+
+          await service.addToFavorites(
+            Pet(
+              id: 'aege',
+              name: 'Aegean',
+              imageUrl: 'https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg',
+            ),
+          );
+
+          final data = service.listPets;
+          print('Retrieved data: $data');
+
+          expect(
+            data[0].name,
+            isNot('Fluffy'),
+          );
+          print('Test successful: Actual name did not match expected name');
+        } catch (e) {
+          print('Test failed: $e');
+          rethrow;
+        }
+      },
+    );
+    test(
+      'PetService removeFromFavorite success',
+      () async {
+        try {
+          await service.init();
+
+          final petToRemove = Pet(
+            id: 'abys',
+            name: 'Abyssinian',
+            imageUrl: 'https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg',
+          );
+
+          if (service.listPets.contains((e) => e.id == petToRemove.id)) {
+            await service.removePetFavorites(petToRemove);
+          }
+
+          final data = service.listPets;
+          print('Retrieved data: $data');
+
+          expect(service.listPets.contains(petToRemove), false);
+          print('Test successful: Pet is removed');
+        } catch (e) {
+          print('Test failed: $e');
+          rethrow;
+        }
+      },
+    );
+  });
+}
+
+class FakePathProviderPlatform extends Fake
+    with MockPlatformInterfaceMixin
+    implements PathProviderPlatform {
+  @override
+  Future<String?> getTemporaryPath() async {
+    return kTemporaryPath;
+  }
+
+  @override
+  Future<String?> getApplicationSupportPath() async {
+    return kApplicationSupportPath;
+  }
+
+  @override
+  Future<String?> getApplicationDocumentsPath() async {
+    return kApplicationDocumentsPath;
+  }
 }
