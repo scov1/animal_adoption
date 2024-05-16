@@ -43,7 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print('🏐 country : ${city}');
     return Scaffold(
       appBar: CustomAppBar(
         canPop: false,
