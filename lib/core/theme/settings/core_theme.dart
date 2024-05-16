@@ -47,16 +47,7 @@ class CoreDefaultTheme implements AppTheme {
         systemNavigationBarIconBrightness: Brightness.dark,
       ),
     ),
-    // extensions: <ThemeExtension>[
-    //   _color,
-    //   _text,
-    //   _button,
-    // ],
   );
 
   late final ThemeButtonStyles _button = ThemeButtonStyles(_color, _text);
-
-  // late final _button = ThemeButtonStyles(_color, _text);
-  // final _color = const ThemeColors();
-  // late final _text = ThemeTextStyles(_color);
 }

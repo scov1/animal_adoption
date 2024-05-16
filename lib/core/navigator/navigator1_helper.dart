@@ -4,8 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'navigator_transitions.dart';
-
 extension NavigatorUtils on BuildContext {
   NavigatorState get router => Navigator.of(this);
   NavigatorState get rootRouter => Navigator.of(this, rootNavigator: true);
@@ -37,45 +35,6 @@ class NavigatorHelper {
     );
   }
 
-  Future<T?> pushOff<T>(
-    Widget screen, {
-    TransitionBuilder? transition,
-    Duration transitionDuration = const Duration(milliseconds: 300),
-  }) {
-    return _nav.pushAndRemoveUntil<T>(
-      adaptiveRoute(screen, transition, transitionDuration),
-      (route) => false,
-    );
-  }
-
-  Future<void> pushReplacement(
-    Widget screen, {
-    TransitionBuilder? transition,
-    Duration transitionDuration = const Duration(milliseconds: 300),
-  }) {
-    return _nav.pushReplacement(
-      adaptiveRoute(screen, transition, transitionDuration),
-    );
-  }
-
-  Future<T?> pushAndRemoveUntil<T>(
-    Widget screen, {
-    required String until,
-    TransitionBuilder? transition,
-    Duration transitionDuration = const Duration(milliseconds: 300),
-  }) {
-    return _nav.pushAndRemoveUntil<T?>(
-      adaptiveRoute(screen, transition, transitionDuration),
-      (route) => route.settings.name == until,
-    );
-  }
-
-  void popUntil<T>(String until) {
-    return _nav.popUntil(
-      (route) => route.settings.name == until || route.isFirst,
-    );
-  }
-
   static Route<T> adaptiveRoute<T>(
     Widget screen, [
     TransitionBuilder? transition,
@@ -85,7 +44,6 @@ class NavigatorHelper {
       return PageRouteBuilder(
         pageBuilder: (context, _, __) => screen,
         transitionDuration: transitionDuration,
-        transitionsBuilder: NavigatorTransitions.scale,
         settings: RouteSettings(
           name: screen.runtimeType.toString(),
         ),
@@ -108,10 +66,3 @@ class NavigatorHelper {
     }
   }
 }
-
-typedef TransitionBuilder = Widget Function(
-  BuildContext context,
-  Animation<double> animation,
-  Animation<double> reverseAnimation,
-  Widget child,
-);

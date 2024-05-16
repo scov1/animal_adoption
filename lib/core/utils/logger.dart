@@ -14,7 +14,6 @@ class Log {
 
   static final _instance = Log._();
 
-  ///[stackTrace] parameter can be either stackTrace or label
   static void error(
     dynamic error, [
     Object? stackTrace,
@@ -74,28 +73,8 @@ class Log {
     return encoder.convert(data);
   }
 
-  static void g(Object? data, {String? label}) {
-    _logWithColor(TextColor.green, toJson(data), label);
-  }
-
-  static void y(Object? data, {String? label}) {
-    _logWithColor(TextColor.yellow, toJson(data), label);
-  }
-
-  static void c(Object? data, {String? label}) {
-    _logWithColor(TextColor.cyan, toJson(data), label);
-  }
-
-  static void r(Object? data, {String? label}) {
-    _logWithColor(TextColor.red, toJson(data), label);
-  }
-
   static void w(Object? data, {String? label}) {
     _logWithColor(TextColor.white, toJson(data), label);
-  }
-
-  static void m(Object? data, {String? label}) {
-    _logWithColor(TextColor.magenta, toJson(data), label);
   }
 
   static void _logWithColor(TextColor color, String output, String? label) {

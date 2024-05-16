@@ -25,20 +25,6 @@ class PrimaryTabsController extends Cubit<PrimaryTabsState> {
       emit(PrimaryTabsState(index));
     }
   }
-
-  bool get canExitFromApp {
-    return navigatorKeys[state.index].currentState?.canPop() ?? false;
-  }
-
-  void clearAllStacks() {
-    for (var item in navigatorKeys) {
-      item.clearStack();
-    }
-  }
-
-  void clearCurrentStack() {
-    navigatorKeys[state.index].clearStack();
-  }
 }
 
 extension on GlobalKey<NavigatorState> {
